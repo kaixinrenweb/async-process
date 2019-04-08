@@ -4,7 +4,7 @@
 - generator
 - async await *
 ```
-    视频观看地址：http://www.doudouyoutang.com/course.html
+视频观看地址：http://www.doudouyoutang.com/course.html
 ```
 
 ## callback (回调函数)
