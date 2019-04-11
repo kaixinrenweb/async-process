@@ -28,3 +28,5 @@
 - `promise`一旦成功，就不能失败，一旦失败，就不能成功
 - 执行器同步执行 但是`then`是异步的
 - 执行器一旦运行报错，就会走`reject`
+- `promise`提供了链式调用
+- `then`方法执行的结果是一个`promise`,每次返回的`promise`都是一个新的`promise`
