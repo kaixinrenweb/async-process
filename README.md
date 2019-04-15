@@ -33,3 +33,7 @@
 - 执行器一旦运行报错，就会走`reject`
 - `promise`提供了链式调用
 - `then`方法执行的结果是一个`promise`,每次返回的`promise`都是一个新的`promise`
+- 自己写的`promise`要通过`test`测试，符合`promise a+`规范
+- `resolve(new Promise)`
+- `catch`方法，`finally`方法（原型上的方法，实例上的方法）
+- `Promise.resolve` / `Promise.reject` (类上面的方法)

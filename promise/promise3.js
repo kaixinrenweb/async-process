@@ -7,6 +7,10 @@ function Promise (exector){
     this.rejectedCallbacks = [];   //失败之后的回调
     let self = this;
     function resolve(value){
+        //判断value是不是promise
+        if(value instanceof Promise){
+            return value.then(resolve, reject);
+        }
         if(self.status=='pending'){
             self.value = value;
             self.status = 'fulfilled';
@@ -124,6 +128,25 @@ Promise.deferred = function(){
         dtd.reject  = reject;
     });
     return dtd;
+}
+
+//catch
+Promise.prototype.catch = function(errCallback){
+    return this.then(null, errCallback);
+}
+
+//resolve
+Promise.resolve = function(value){
+    return new Promise((resolve,reject)=>{
+        resolve(value);
+    });
+}
+
+//reject
+Promise.reject = function(reason){
+    return new Promise((resolve,reject)=>{
+        reject(reason);
+    })
 }
 
 module.exports = Promise;
