@@ -37,3 +37,5 @@
 - `resolve(new Promise)`
 - `catch`方法，`finally`方法（原型上的方法，实例上的方法）
 - `Promise.resolve` / `Promise.reject` (类上面的方法)
+- `Promise.all` / `Promise.race` (类上面的方法)
+- `promisify`->`promise`化
