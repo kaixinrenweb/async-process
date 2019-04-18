@@ -39,3 +39,6 @@
 - `Promise.resolve` / `Promise.reject` (类上面的方法)
 - `Promise.all` / `Promise.race` (类上面的方法)
 - `promisify`->`promise`化
+
+## generator 生成器
+- iterator 迭代器
