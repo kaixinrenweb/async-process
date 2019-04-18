@@ -1,8 +1,8 @@
 ## 异步发展流程
-- callback 
-- promise
-- generator
-- async await *
+- `callback` 多个请求并发 不好管理 链式调用导致嵌套的过多
+- `promise`  优点 可以优雅的处理异步 处理错误 缺点还是基于回调的，还是会有嵌套的问题
+- `generator + co dva` 让代码像同步一样的执行 不能支持`try+catch`
+- `async await` * 解决异步 问题的目前的终极的解决方案， 支持`try+catch`
 ```
 视频观看地址：http://www.doudouyoutang.com/course.html
 ```
@@ -41,4 +41,10 @@
 - `promisify`->`promise`化
 
 ## generator 生成器
-- iterator 迭代器
+- `iterator` 迭代器 `next()`
+- `generator` 遇到`yield`会暂停执行
+
+## async await
+- `generator + co = async await`
+- `async`函数执行后返回的是一个`promise`
+- 如果`try+catch` 那么这个`promise`返回的就是真
