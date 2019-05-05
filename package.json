@@ -1,0 +1,23 @@
+{
+  "name": "async-process",
+  "version": "1.0.0",
+  "description": "- callback  - promise - generator - async await * ``` 视频观看地址：http://www.doudouyoutang.com/course.html ```",
+  "main": "1.super.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaixinrenweb/async-process.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kaixinrenweb/async-process/issues"
+  },
+  "homepage": "https://github.com/kaixinrenweb/async-process#readme",
+  "dependencies": {
+    "co": "^4.6.0"
+  }
+}
